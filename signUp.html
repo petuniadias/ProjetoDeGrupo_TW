@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kindacat</title>
+    <title>Sign Up</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/images/favicon.png">
@@ -17,13 +17,39 @@
     
 
 </head>
+<style>
+
+</style>
 <body>
     <div class="container">
-        
-        <div>
-            <button type="button" class="btn btn-outline-primary">Login</button>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card d-flex flex-column align-items-center">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Register</h2>
+                        <form id="registerForm" action="">
+                            <div class="mb-3 d-grid gap-2">
+                                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Email" autocomplete="none" required>
+                                <div id="emailError" class="invalid-feedback"></div>
+                            </div>
+                            <div class="mb-3 d-grid gap-2">
+                                <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" required>
+                                <div id="passwordError" class="invalid-feedback"></div>
+                            </div>
+                            <div class="mb-3 d-grid gap-2">
+                                <input type="password" class="form-control form-control-lg" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                                <div id="confirmPasswordError" class="invalid-feedback"></div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" id="registerButton" class="btn btn-dark btn-lg">Register</button>
+                                <a type="button" href="login.html" class="btn btn-light btn-lg">Sign In</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </div>    
 
    
 </body>
