@@ -18,39 +18,37 @@
 
 </head>
 <style>
+    .container{
+        background-color: #BCBCBC;
+        padding: 10px;
+    }
 
 </style>
 <body>
-    <div class="container">
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-6">
-                <div class="card d-flex flex-column align-items-center">
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Register</h2>
-                        <form id="registerForm" action="">
-                            <div class="mb-3 d-grid gap-2">
-                                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Email" autocomplete="none" required>
-                                <div id="emailError" class="invalid-feedback"></div>
-                            </div>
-                            <div class="mb-3 d-grid gap-2">
-                                <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" required>
-                                <div id="passwordError" class="invalid-feedback"></div>
-                            </div>
-                            <div class="mb-3 d-grid gap-2">
-                                <input type="password" class="form-control form-control-lg" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
-                                <div id="confirmPasswordError" class="invalid-feedback"></div>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" id="registerButton" class="btn btn-dark btn-lg">Register</button>
-                                <a type="button" href="login.html" class="btn btn-light btn-lg">Sign In</a>
-                            </div>
-                        </form>
-                    </div>
+<div class="container mt-3" style="width: 50%;border-radius: 4px;">
+    <div class="row justify-content-center">
+        <h2 class="card-title text-center">Register</h2>
+        <form id="registerForm" action="">
+            <div class="m-3 d-grid gap-2 mx-auto" style="width: 50%;">
+                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Email" autocomplete="none" required>
+                <div id="emailError" class="invalid-feedback"></div>
                 </div>
+            <div class="m-3 d-grid gap-2 mx-auto" style="width: 50%;">
+                <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" required>
+                <div id="passwordError" class="invalid-feedback"></div>
             </div>
-        </div>
-    </div>    
-
+            <div class="m-3 d-grid gap-2 mx-auto" style="width: 50%;">
+                <input type="password" class="form-control form-control-lg" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                <div id="confirmPasswordError" class="invalid-feedback"></div>
+            </div>
+            <div class="text-center">
+                <button type="submit" id="registerButton" class="btn btn-dark btn-lg">Register</button>
+                <a type="button" href="login.html" class="btn btn-light btn-lg">Sign In</a>
+            </div>
+        </form>
+    </div>
+</div>
+ 
    
 </body>
 </html>
