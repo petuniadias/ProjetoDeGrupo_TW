@@ -3,8 +3,9 @@ var answer1 = document.getElementById("answer1");
 var answer2 = document.getElementById("answer2");
 var answer3 = document.getElementById("answer3");
 var answer4 = document.getElementById("answer4");
-var result = document.getElementById("Result");
-let wrong,correct
+var result = document.getElementById("result");
+let wrong=0
+
 let list=[0,1,2,3]
 let currentQuestion=0
 let questions = [
@@ -26,9 +27,12 @@ function checkAnswer(answer){
     if(answer.innerHTML==questions[j][5]){
         console.log("acertou!")
         currentQuestion++
-        correct++
+        console.log(list,j)
         run()
     }else{
+        list=[0,1,2,3]
+        currentQuestion=0
+        start()
         console.log("erraste")
         wrong++
     }
@@ -42,20 +46,26 @@ return array;
 }
 function run()
 {
-    if (currentQuestion<3){
+    if (currentQuestion<4){
         list.pop()
         j=list[list.length-1]
         showCurrentQuestion(j)
     }else{
         console.log("hello")
-        result.style.display="block"
+        questionText.style.display="none";
+        answer1.style.display="none";
+        answer2.style.display="none";
+        answer3.style.display="none";
+        answer4.style.display="none";
+        result.innerHTML=`Acabou!! Erraste ${wrong} vezes!`;
+        result.style.display="block";
+
     }
 }
 function start(){
     shuffleArray(list)
     j=list[list.length-1]
     showCurrentQuestion(j)
-
 }
 start()
 console.log(list)
