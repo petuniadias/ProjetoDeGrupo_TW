@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif
 }
 .header {
     display: flex;
@@ -22,13 +23,17 @@ body{
 }
 .dropdown {
     display: inline-block;
+    font-family: 'Roboto', sans-serif, 15;
 }
 .dropbtn {
     background-color: #bcbcbc;
-    border: 0;
+    border: 2px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
 }
 .dropbtn:hover {
-    background-color: #c71212;
+    background-color: #ffffff;
 }
 
 .dropdown-content {
@@ -95,7 +100,7 @@ body{
 }
 .game-description{
     padding: 5px;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 .titles{
     font-size: large;
