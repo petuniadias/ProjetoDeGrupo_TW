@@ -25,9 +25,9 @@ let geology = [
     ["O que é a erosão glacial?", "Erosão causada pelo vento", "Erosão causada pelo gelo em movimento", "Erosão causada pela água", "Erosão causada por atividade vulcânica", "Erosão causada pelo gelo em movimento"],
 ];
 
-let questions = geology;
+let questions = geography;
 
-
+    
 function showCurrentQuestion(j) {
     questionText.innerHTML = questions[j][0];
     answer1.innerHTML = questions[j][1];
@@ -46,13 +46,14 @@ function checkAnswer(answer) {
         progressValue.innerHTML=progress+"%"
         bar.style.width=progress + '%';
     } else {
-        currentQuestion ++
-        progress+=25;
-        progressValue.innerHTML=progress+"%"
-        bar.style.width=progress + '%';
-        run();
+        list = [0, 1, 2, 3];
+        currentQuestion = 0;
+        start();
         console.log("erraste");
         wrong++;
+        progress=0;
+        progressValue.innerHTML=progress+"%"
+        bar.style.width=progress + '%';
     }
 }
 
@@ -78,6 +79,7 @@ function run() {
 }
 
 function start() {
+    shuffleArray(list);
     j = list[list.length - 1];
     showCurrentQuestion(j);
 }
