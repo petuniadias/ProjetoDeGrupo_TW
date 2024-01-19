@@ -14,33 +14,49 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Petúnia Dias, Sérgio Gonçalves, Mariana Barros">
     <link href="./assets/css/questions.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
 </head>
 
 <body id="bodyquestions">
-  <div class="container">
-    <div class="row justify-content-center">
-        <div class="card-body">
-            <div id="question1">
-                <div class="card custom-card">
-                    <p id="Question"></p>
-                </div>
-                <ul id="options1" class="options">
-                    <li>
-                      <button id="answer1" onclick="checkAnswer(answer1)" class="btn custom-button"></button>
-                      <button id="answer2" onclick="checkAnswer(answer2)" class="btn custom-button"></button>
-                    </li>
-                    <li>
-                      <button id="answer3" onclick="checkAnswer(answer3)" class="btn custom-button"></button>
-                      <button id="answer4" onclick="checkAnswer(answer4)" class="btn custom-button"></button>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p class="result" id="result" style="display: none;"><p>
+  <div class="header">
+    <div class="Item-container">
+        <div class="dropdown">
+            <button class="dropbtn" type="button"><img src="menu.png"></button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a> 
+                <a href="#">Link 3</a>
             </div>
         </div>
+        <div id="kindacat">
+            <a type="button" href="index.html"><img src="./assets/images/logotipo-kindacat.svg" style="height:7vh; width: auto;"></a>
+        </div>
     </div>
-  </div>
+</div>
+<br>
+<br>  
+<div class="container">
+    <div class="card-body">
+        <div id="question1">
+            <div class="card custom-card">
+                <p id="Question"></p>
+            </div>
+            <ul id="options1" class="options">
+                <li>
+                  <button id="answer1" onclick="checkAnswer(answer1)" class="btn custom-button"></button>
+                  <button id="answer2" onclick="checkAnswer(answer2)" class="btn custom-button"></button>
+                </li>
+                <li>
+                  <button id="answer3" onclick="checkAnswer(answer3)" class="btn custom-button"></button>
+                  <button id="answer4" onclick="checkAnswer(answer4)" class="btn custom-button"></button>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="result" id="result" style="display: none;"><p>
+        </div>
+    </div>
+</div>
   <script src="questionEz.js"></script>
 </body>
 </html>

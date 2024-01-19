@@ -1,7 +1,9 @@
 .header {
     display: flex;
-    background-color: #bcbcbc;
-    height: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 15vh;
     font-size: large;
     
 }
@@ -11,6 +13,7 @@
     flex-direction: row;
     margin: 2px;
     padding: 10px;
+    background-color: #bcbcbc;
 }
 #kindacat{
     display: flex;
@@ -58,4 +61,29 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #bcbcbc;
+}
+.games{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+.game-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    background-color: #bcbcbc;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#globo{
+    width: 7vw;
+    height: auto;
+}
+.play-button{
+    width: 5vw;
+    background-color: orange;
+    font: bold;
 }
