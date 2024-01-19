@@ -10,6 +10,8 @@ let progressValue=document.getElementById("progress")
 let progress=0
 let list = [0, 1, 2, 3];
 let currentQuestion = 0;
+const urlParams = new URLSearchParams(window.location.search);
+const variableValue = urlParams.get('variableName');
 
 let geography = [
     ["Em que continente fica Guiné Equatorial?", "América", "Asia", "Oceania", "Africa", "Africa"],
@@ -25,9 +27,12 @@ let geology = [
     ["O que é a erosão glacial?", "Erosão causada pelo vento", "Erosão causada pelo gelo em movimento", "Erosão causada pela água", "Erosão causada por atividade vulcânica", "Erosão causada pelo gelo em movimento"],
 ];
 
-let questions = geography;
+if (variableValue=="Geography"){
+    questions=geography
+}if(variableValue=="Geology"){
+    questions=geology
+}
 
-    
 function showCurrentQuestion(j) {
     questionText.innerHTML = questions[j][0];
     answer1.innerHTML = questions[j][1];
