@@ -27,10 +27,16 @@ let geology = [
     ["O que é a erosão glacial?", "Erosão causada pelo vento", "Erosão causada pelo gelo em movimento", "Erosão causada pela água", "Erosão causada por atividade vulcânica", "Erosão causada pelo gelo em movimento"],
 ];
 
+let chemistry=[ ["Quais são os elementos químicos presentes no aço?", "alumínio e magnésio", "carbono e ferro", "ferro e potássio", "potássio e carbono", "carbono e ferro"],
+["Qual é o símbolo do sódio?","Na","A","Ag","Au","Na"]
+];
+
 if (variableValue=="Geography"){
     questions=geography
 }if(variableValue=="Geology"){
     questions=geology
+}if(variableValue=="Chemistry"){
+    questions=chemistry
 }
 
 function showCurrentQuestion(j) {

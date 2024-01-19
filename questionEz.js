@@ -21,14 +21,16 @@ let geography = [
     ["Qual é o nome da fronteira natural entre a Europa e a Ásia?", " Rio Amazonas", "Montanhas Rochosas", "Montes Urais", "Cordilheira dos Andes", "Montes Urais"],
 ];
 
-
-
 let geology = [
     ["Qual destas rochas é uma rocha sedimentar?", "Arenito", "Granito", "Mármore", "Ardósia", "Arenito"],
     ["Qual é o mineral mais abundante na crosta terrestre?", "Quartzo", "Feldspato", "Calcita", "Mica", "Quartzo"],
     ["Qual é o nome dado à teoria que explica a movimentação das placas tectônicas?", "Teoria da Gravidade", " Teoria da Evolução", "Teoria da Relatividade", "Teoria da Tectônica de Placas", "Teoria da Tectônica de Placas"],
     ["O que é a erosão glacial?", "Erosão causada pelo vento", "Erosão causada pelo gelo em movimento", "Erosão causada pela água", "Erosão causada por atividade vulcânica", "Erosão causada pelo gelo em movimento"],
 ];
+
+let chemistry=[ ["Quais são os elementos químicos presentes no aço?", "alumínio e magnésio", "carbono e ferro", "ferro e potássio", "potássio e carbono", "carbono e ferro"],
+["Qual é o símbolo do sódio?","Na","A","Ag","Au","Na"]
+]
 
 if (variableValue=="Geography"){
     questions=geography
@@ -54,13 +56,14 @@ function checkAnswer(answer) {
         progressValue.innerHTML=progress+"%"
         bar.style.width=progress + '%';
     } else {
-        currentQuestion ++
+        currentQuestion ++;
+        wrong++;
         progress+=25;
         progressValue.innerHTML=progress+"%"
         bar.style.width=progress + '%';
         run();
         console.log("erraste");
-        wrong++;
+        
     }
 }
 
