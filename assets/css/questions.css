@@ -3,7 +3,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
   ul {
     list-style: none;
   }
@@ -12,7 +11,6 @@ body {
     flex-direction: column;
     border: 2px solid #bcbcbc;
     border-radius: 10px;
-
     width: 50vw;
     height: auto;
   }
