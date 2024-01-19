@@ -36,8 +36,8 @@
         <div class="dropdown">
             <button class="dropbtn" type="button">Play</button>
             <div class="dropdown-content">
-                <a>Easy</a>
-                <a>Hard</a>
+                <a onclick="goToDestinationEz('Geography') ">Easy</a>
+                <a onclick="goToDestinationHard('Geography')">Hard</a>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
                 <img id="globo" src="./globo.png">
             </div>
             <div class="game-description">
-                <p class="titles">Quizz Geografia</p>
+                <p class="titles">Geologia</p>
                 <p>Decriçãozinha topzeira super</p>
             </div>
         </div>
@@ -57,7 +57,7 @@
             <div class="dropdown">
                 <button class="dropbtn" type="button">Play</button>
                 <div class="dropdown-content">
-                    <a>Easy</a>
+                    <a onclick="goToDestinationEz('Geology') ">Easy</a>
                     <a>Hard</a>
                 </div>
             </div>
@@ -126,6 +126,8 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
 </body>
-<script src="questionEz.js"></script>
+<script src="openPageHandler.js"></script>
 </html>

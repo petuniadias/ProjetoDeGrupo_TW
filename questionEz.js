@@ -10,6 +10,9 @@ let progressValue=document.getElementById("progress")
 let progress=0
 let list = [0, 1, 2, 3];
 let currentQuestion = 0;
+const urlParams = new URLSearchParams(window.location.search);
+const variableValue = urlParams.get('variableName');
+
 
 let geography = [
     ["Em que continente fica Guiné Equatorial?", "América", "Asia", "Oceania", "Africa", "Africa"],
@@ -18,6 +21,8 @@ let geography = [
     ["Qual é o nome da fronteira natural entre a Europa e a Ásia?", " Rio Amazonas", "Montanhas Rochosas", "Montes Urais", "Cordilheira dos Andes", "Montes Urais"],
 ];
 
+
+
 let geology = [
     ["Qual destas rochas é uma rocha sedimentar?", "Arenito", "Granito", "Mármore", "Ardósia", "Arenito"],
     ["Qual é o mineral mais abundante na crosta terrestre?", "Quartzo", "Feldspato", "Calcita", "Mica", "Quartzo"],
@@ -25,8 +30,11 @@ let geology = [
     ["O que é a erosão glacial?", "Erosão causada pelo vento", "Erosão causada pelo gelo em movimento", "Erosão causada pela água", "Erosão causada por atividade vulcânica", "Erosão causada pelo gelo em movimento"],
 ];
 
-let questions = geology;
-
+if (variableValue=="Geography"){
+    questions=geography
+}if(variableValue=="Geology"){
+    questions=geology
+}
 
 function showCurrentQuestion(j) {
     questionText.innerHTML = questions[j][0];

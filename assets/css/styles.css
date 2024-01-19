@@ -80,7 +80,7 @@ body{
     align-items: flex-end;
     width: 40vw;
     background-color: #bcbcbc;
-    border: 2px solid black;
+    border-radius: 10px;
     padding: 10px;
 }
 

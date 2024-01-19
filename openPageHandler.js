@@ -1,5 +1,8 @@
-function openPage(){
-    //open page,
-    //give easy and hard choice
-    
-}
+function goToDestinationEz(variableValue) {
+
+    window.location.href = `questionEz.html?variableName=${variableValue}`;
+  }
+  function goToDestinationHard(variableValue) {
+
+    window.location.href = `questionEz.html?variableName=${variableValue}`;
+  }
