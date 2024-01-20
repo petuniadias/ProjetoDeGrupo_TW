@@ -27,6 +27,7 @@ body {
     height: 70px;
     width: auto;
     border-width: 0.22vw;
+    border-radius: 10px;
   }
   li{
     display: flex;
@@ -36,7 +37,9 @@ body {
   p {
     font-size: 20px;
     position: relative;
-    margin: 2px;
+    margin: auto;
+    display: flex;
+    align-items: center;
   }
   
   .custom-button {
