@@ -38,10 +38,11 @@ let biology=[["Qual é a função principal das mitocôndrias nas células?","Ar
 ["Qual é a função principal dos ribossomos nas células?","Produção de ATP","Síntese de proteínas","Armazenamento de lipídios","Regulação do pH celular","Síntese de proteínas"],
 ["O que é a mitose?","Processo de divisão celular que resulta em células haploides","Processo de divisão celular que resulta em células diploides","Troca de material genético entre células","Respiração celular nas mitocôndrias","Processo de divisão celular que resulta em células diploides"]
 ];
-let physics=[[],
-[],
-[],
-[]]
+let physics=[ ["A massa é...", "a força da gravidade", "uma grandeza vetorial", "determina-se com um dinamómetro", "medida com uma balança", "medida com uma balança"],
+["Que tipos de força existem?","Forças de contacto e forças à distância","Gravíticas","Forças motoras","Elípticas","Forças de contacto e forças à distância"],
+["Para medir o valor ou intensidade de uma força utiliza-se que instrumento?", "Balança", "Termómetro", "Dinamómetro", "Barómetro", "Dinamómetro"],
+["Qual a idade do Sistema Solar?","15 mil anos","15 mil milhões de anos","5 mil milhões de anos","5 mil anos","5 mil anos"],
+];
 
 if (variableValue=="Geography"){
     questions=geography
