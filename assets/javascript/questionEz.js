@@ -5,9 +5,9 @@ let answer3 = document.getElementById("answer3");
 let answer4 = document.getElementById("answer4");
 let result = document.getElementById("result");
 let wrong = 0;
-let bar=document.getElementById("bar")
-let progressValue=document.getElementById("progress")
-let progress=0
+let bar=document.getElementById("bar");
+let progressValue=document.getElementById("progress");
+let progress=0;
 let list = [0, 1, 2, 3];
 let currentQuestion = 0;
 const urlParams = new URLSearchParams(window.location.search);
@@ -46,6 +46,22 @@ function showCurrentQuestion(j) {
     answer4.innerHTML = questions[j][4];
 }
 
+function hideElements() {
+    questionText.style.display = "none";
+    answer1.style.display = "none";
+    answer2.style.display = "none";
+    answer3.style.display = "none";
+    answer4.style.display = "none";
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const h = Math.floor(Math.random() * (i + 1));
+        [array[i], array[h]] = [array[h], array[i]];
+    }
+    return array;
+}
+
 function checkAnswer(answer) {
     if (answer.innerHTML === questions[j][5]) {
         currentQuestion++;
@@ -63,14 +79,6 @@ function checkAnswer(answer) {
     }
 }
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const h = Math.floor(Math.random() * (i + 1));
-        [array[i], array[h]] = [array[h], array[i]];
-    }
-    return array;
-}
-
 function run() {
     if (currentQuestion < 4) {
         list.pop();
@@ -80,21 +88,13 @@ function run() {
         hideElements();
         result.innerHTML = `Acabou!!Erraste ${wrong} vezes!`;
         result.style.display = "block";
+        document.getElementById("question1").style.display="none";
     }
 }
 
 function start() {
     j = list[list.length - 1];
     showCurrentQuestion(j);
-}
-
-function hideElements() {
-    // Hides the question and answer elements
-    questionText.style.display = "none";
-    answer1.style.display = "none";
-    answer2.style.display = "none";
-    answer3.style.display = "none";
-    answer4.style.display = "none";
 }
 
 // Initialize the quiz when the page loads
