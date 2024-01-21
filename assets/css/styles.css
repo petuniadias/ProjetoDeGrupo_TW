@@ -66,7 +66,7 @@ body{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #bcbcbc;
+    background-color: #ffa509;
 }
 .games{
     display: flex;
@@ -107,13 +107,12 @@ body{
     justify-content: center;
 }
 .progress-container {
-display: flex;
-background-color: #bcbcbc;
-border-radius: 10px;
-width: 40vw;
-height: 4vh;
-flex-wrap: wrap;
-align-items: center;
+    display: flex;
+    background-color: #bcbcbc;
+    border-radius: 10px;
+    width: 50vw;
+    height: 4vh;
+    align-items: center;
 }
 #bar {
 display: flex;
