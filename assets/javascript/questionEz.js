@@ -29,8 +29,10 @@ let geology = [
 ];
 
 let chemistry=[ ["Quais são os elementos químicos presentes no aço?", "alumínio e magnésio", "carbono e ferro", "ferro e potássio", "potássio e carbono", "carbono e ferro"],
-["Qual é o símbolo do sódio?","Na","A","Ag","Au","Na"]
-]
+["Qual é o símbolo do sódio?","Na","A","Ag","Au","Na"],
+["Numa escala de Ph, para uma sunstância ser considerada ácida, ela tem que apresentar o mesmo (Ph) sendo:", "Maior que sete", "Menor que sete", "Igual a sete", "Nenhuma das opções anteriores", "Menor que sete"],
+["Qual dos elementos abaixo não é um gás nobre?","Hélio","Xenônio","Argônio","Cádmio","Cádmio"],
+];
 
 if (variableValue=="Geography"){
     questions=geography

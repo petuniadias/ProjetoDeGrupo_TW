@@ -91,6 +91,7 @@ body{
 }
 .img-text{
     display: flex;
+    align-items: center;
 }
 
 .game-description{
