@@ -5,9 +5,9 @@ let answer3 = document.getElementById("answer3");
 let answer4 = document.getElementById("answer4");
 let result = document.getElementById("result");
 let wrong = 0;
-let bar=document.getElementById("bar")
-let progressValue=document.getElementById("progress")
-let progress=0
+let bar=document.getElementById("bar");
+let progressValue=document.getElementById("progress");
+let progress=0;
 let list = [0, 1, 2, 3];
 let currentQuestion = 0;
 const urlParams = new URLSearchParams(window.location.search);
@@ -88,6 +88,7 @@ function run() {
         hideElements();
         result.innerHTML = `Acabou!!Erraste ${wrong} vezes!`;
         result.style.display = "block";
+        document.getElementById("hideCard").style.display="none";
     }
 }
 
