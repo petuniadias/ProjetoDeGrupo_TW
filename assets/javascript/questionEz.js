@@ -46,6 +46,22 @@ function showCurrentQuestion(j) {
     answer4.innerHTML = questions[j][4];
 }
 
+function hideElements() {
+    questionText.style.display = "none";
+    answer1.style.display = "none";
+    answer2.style.display = "none";
+    answer3.style.display = "none";
+    answer4.style.display = "none";
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const h = Math.floor(Math.random() * (i + 1));
+        [array[i], array[h]] = [array[h], array[i]];
+    }
+    return array;
+}
+
 function checkAnswer(answer) {
     if (answer.innerHTML === questions[j][5]) {
         currentQuestion++;
@@ -63,14 +79,6 @@ function checkAnswer(answer) {
     }
 }
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const h = Math.floor(Math.random() * (i + 1));
-        [array[i], array[h]] = [array[h], array[i]];
-    }
-    return array;
-}
-
 function run() {
     if (currentQuestion < 4) {
         list.pop();
@@ -86,15 +94,6 @@ function run() {
 function start() {
     j = list[list.length - 1];
     showCurrentQuestion(j);
-}
-
-function hideElements() {
-    // Hides the question and answer elements
-    questionText.style.display = "none";
-    answer1.style.display = "none";
-    answer2.style.display = "none";
-    answer3.style.display = "none";
-    answer4.style.display = "none";
 }
 
 // Initialize the quiz when the page loads
