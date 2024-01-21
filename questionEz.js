@@ -48,9 +48,7 @@ function showCurrentQuestion(j) {
 
 function checkAnswer(answer) {
     if (answer.innerHTML === questions[j][5]) {
-        console.log("acertou!");
         currentQuestion++;
-        console.log(list, j);
         run();
         progress+=25;
         progressValue.innerHTML=progress+"%"
@@ -62,8 +60,6 @@ function checkAnswer(answer) {
         progressValue.innerHTML=progress+"%"
         bar.style.width=progress + '%';
         run();
-        console.log("erraste");
-        
     }
 }
 
@@ -81,9 +77,8 @@ function run() {
         j = list[list.length - 1];
         showCurrentQuestion(j);
     } else {
-        console.log("hello");
         hideElements();
-        result.innerHTML = `Acabou!! Erraste ${wrong} vezes!`;
+        result.innerHTML = `Acabou!!Erraste ${wrong} vezes!`;
         result.style.display = "block";
     }
 }
