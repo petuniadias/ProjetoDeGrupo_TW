@@ -28,8 +28,19 @@ let geology = [
 ];
 
 let chemistry=[ ["Quais são os elementos químicos presentes no aço?", "alumínio e magnésio", "carbono e ferro", "ferro e potássio", "potássio e carbono", "carbono e ferro"],
-["Qual é o símbolo do sódio?","Na","A","Ag","Au","Na"]
+["Qual é o símbolo do sódio?","Na","A","Ag","Au","Na"],
+["Numa escala de Ph, para uma sunstância ser considerada ácida, ela tem que apresentar o mesmo (Ph) sendo:", "Maior que sete", "Menor que sete", "Igual a sete", "Nenhuma das opções anteriores", "Menor que sete"],
+["Qual dos elementos abaixo não é um gás nobre?","Hélio","Xenônio","Argônio","Cádmio","Cádmio"],
 ];
+let biology=[["Qual é a função principal das mitocôndrias nas células?","Armazenar informações genéticas","Produzir energia","Sintetizar proteínas","Armazenar água","Produzir energia"],
+["Em que fase do ciclo celular ocorre a replicação do DNA?"," G1","S","G2","M","S"],
+["Qual é a função principal dos ribossomos nas células?","Produção de ATP","Síntese de proteínas","Armazenamento de lipídios","Regulação do pH celular","Síntese de proteínas"],
+["O que é a mitose?","Processo de divisão celular que resulta em células haploides","Processo de divisão celular que resulta em células diploides","Troca de material genético entre células","Respiração celular nas mitocôndrias","Processo de divisão celular que resulta em células diploides"]
+];
+let physics=[[],
+[],
+[],
+[]]
 
 if (variableValue=="Geography"){
     questions=geography
@@ -37,6 +48,10 @@ if (variableValue=="Geography"){
     questions=geology
 }if(variableValue=="Chemistry"){
     questions=chemistry
+}if(variableValue=="Biology"){
+    questions=biology
+}if(variableValue=="Physics"){
+    questions=physics
 }
 
 function showCurrentQuestion(j) {
