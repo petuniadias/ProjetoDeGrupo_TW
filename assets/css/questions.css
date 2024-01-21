@@ -65,8 +65,11 @@ body {
   
   #result {
     font-size: 20px;
-    margin-left: 2.22vw;
-    align-items: center;
+    margin: 5px;
+  }
+  #resultDiv{
+    display: flex;
+    justify-content: center;
   }
   .container{
     display: flex;

@@ -88,7 +88,7 @@ function run() {
         hideElements();
         result.innerHTML = `Acabou!!Erraste ${wrong} vezes!`;
         result.style.display = "block";
-        document.getElementById("hideCard").style.display="none";
+        document.getElementById("question1").style.display="none";
     }
 }
 

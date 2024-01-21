@@ -94,6 +94,8 @@ function run() {
         hideCurrentQuestion();
         result.innerHTML = `Acabou!! Erraste ${wrong} vezes!`;
         result.style.display = "block";
+        result.style.display = "block";
+        document.getElementById("question1").style.display="none";
     }
 }
 
