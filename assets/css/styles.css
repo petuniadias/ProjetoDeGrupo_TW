@@ -13,7 +13,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin: 2px;
     padding: 10px;
     background-color: #bcbcbc;
 }
@@ -33,13 +32,13 @@ body{
     border-radius: 10px;
 }
 .dropbtn:hover {
-    background-color: #ffffff;
+    background-color: #ddb369;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #bcbcbc;
+    background-color: #8b1010;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -91,13 +90,7 @@ body{
 .img-text{
     display: flex;
 }
-.play-button{
-    width: 5vw;
-    background-color: orange;
-    font: bold;
-    height: 5vh;
-    border-radius: 15px;
-}
+
 .game-description{
     padding: 5px;
     font-family: 'Roboto', sans-serif;
@@ -187,20 +180,6 @@ footer ul>li {
 
 .contact-mailto::before {
     content: "\e158";
-}
-
-.contact-phone::before {
-    content: "\f0e2";
-}
-
-.contact-phone>div {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-phone,
-.contact-address {
-    display: inline-flex;
 }
 
 .contact-address::before {
