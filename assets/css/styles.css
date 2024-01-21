@@ -23,6 +23,7 @@ body{
 .dropdown {
     display: inline-block;
     font-family: 'Roboto', sans-serif, 15;
+    cursor: pointer;
 }
 .dropbtn {
     background-color: #ffba41;
@@ -33,6 +34,7 @@ body{
 }
 .dropbtn:hover {
     background-color: #ddb369;
+    cursor: pointer;
 }
 
 .dropdown-content {
