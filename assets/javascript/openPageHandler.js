@@ -1,8 +1,8 @@
 function goToDestinationEz(variableValue) {
 
-    window.location.href = `questionEz.html?variableName=${variableValue}`;
+    window.location.href = `questionez.html?variableName=${variableValue}`;
   }
   function goToDestinationHard(variableValue) {
 
-    window.location.href = `questionHard.html?variableName=${variableValue}`;
+    window.location.href = `questionhard.html?variableName=${variableValue}`;
   }
